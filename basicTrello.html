@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Trello App</title>
+
+    <style>
+        nav{
+            background-color: cadetblue;
+            opacity: 0.7
+        }
+        body{
+            
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            
+            
+        }
+        .title_nav{
+            background-color: #4090AC;
+            opacity: 0.9;
+            width: fit-content;
+            align-items: last baseline;
+            margin-right: 10px;
+        }
+        #search{
+            width: 63px;
+            height: 11px;
+            margin: 1px;
+            background-color: #4090AE;
+            border: none;
+
+        }
+        .subHeadText{
+            font-size: 0.5em;
+            color:azure;
+            display: inline;
+        }
+      .subheading{
+        width: 100%;
+        opacity: 1.3;
+        margin-top: -5px;
+        background-color: #4090AC;
+        height: fit-content;
+        display: inline;
+        
+      }
+      .main-body{
+        
+        overflow-x:scroll;
+        flex-direction: row;
+        display: inline-flex;
+      }
+      .list1{
+        background-color: rgba(247, 241, 241, 0.934);
+        width: 95px;
+        border-radius: 5px;
+        margin:5px;
+        display: inline;
+       
+    
+      }
+      .blocks{
+        width:88%;
+        height:20px;
+        background-color: azure;
+        cursor: pointer;
+        margin: 4px;
+        border-radius: 5px;
+      }
+      #desc{
+        width: 94%;
+        height: 34px;
+        font-size: 0.5em;
+      }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Basic Trello Design
+    </h1>
+    <div class="main-body">
+        <!-- First Block -->
+        <div class="list1">
+            <span>
+                <p style="display:inline;font-size:0.5em;">To do </p>
+                <p style="display:inline;font-size:0.5em;margin-left:62px;">...</p>
+            </span>
+            
+            <div class="blocks">
+                <span>
+                    <p style="font-size:0.5em;display:inline;margin-left:5px;">Learn Html</p>
+                </span>
+                <i style="display:inline;scale:0.5;margin-left:18px;" class="fa-solid fa-pencil"></i>
+
+            </div>
+            <div class="blocks">
+                <span>
+                    <p style="font-size:0.5em;display:inline;margin-left:5px;">Learn Css</p>
+                </span>
+                <i style="display:inline;scale:0.5;margin-left:24px;" class="fa-solid fa-pencil"></i>
+
+            </div>
+            <div class="blocks">
+                <span>
+                    <p style="font-size:0.5em;display:inline;margin-left:5px;">Learn Javascript</p>
+                </span>
+                <i style="display:inline;scale:0.5;margin-left:5px;" class="fa-solid fa-pencil"></i>
+
+            </div>
+            <span>
+                <i  class="fa-solid fa-plus" style="color:azure; scale:0.5;font-weight:bold;"></i>
+                <p style="font-size:0.5em;display:inline;margin-left:5px;margin-top:10px;color:rgb(96, 94, 94)">Add another card</p>
+
+            </span>
+        </div>
+<!-- Second Block  -->
+        <div class="list1">
+            <span>
+                <p style="display:inline;font-size:0.5em;">Doing </p>
+                <p style="display:inline;font-size:0.5em;margin-left:62px;">...</p>
+            </span>
+            
+            <div class="blocks">
+                <span>
+                    <p style="font-size:0.5em;display:inline;margin-left:5px;">Prepare Resume</p>
+                </span>
+                
+
+            </div>
+            <div class="blocks">
+                <span>
+                    <textarea name="area" id="desc" placeholder="Enter a title for this card ..."></textarea>
+                </span>
+                
+
+            </div>
+            <div class="blocks">
+                <span>
+                    <input style="font-size: 9px;
+                    color: azure;
+                    background-color: #9FA04A;
+                    border: 1px solid brown;
+                    margin-top: 24px;" type="button" value="Add Card">
+                    <span style="    font-size: 13px;
+                    font-family: cursive;
+                    font-weight: bold;">X</span>
+                </span>
+                
+
+            </div>
+        
+        </div>
+        <!-- Third Block -->
+        <div class="list1" style="height:fit-content;">
+            <span>
+                <p style="display:inline;font-size:0.5em;">Testing/Verifying </p>
+                <p style="display:inline;font-size:0.5em;margin-left:25px;">...</p>
+            </span>
+            
+            <div class="blocks">
+                <span>
+                    <p style="font-size:0.5em;display:inline;margin-left:5px;">Twitter App FrontEnd</p>
+                </span>
+                
+
+            </div>
+            
+            <div style="margin-top: 10px;">
+            <span>
+                <i  class="fa-solid fa-plus" style="color:azure; scale:0.5;font-weight:bold;"></i>
+                <p style="font-size:0.5em;display:inline;margin-left:5px;margin-top:10px;color:rgb(96, 94, 94)">Add another card</p>
+
+            </span>
+        </div>
+        </div>
+        <!-- Fourth Block -->
+        <div class="list1" style="height:fit-content">
+            <span>
+                <p style="display:inline;font-size:0.5em;">Deploying </p>
+                <p style="display:inline;font-size:0.5em;margin-left:47px;">...</p>
+            </span>
+            
+            <div class="blocks">
+                <span>
+                    <p style="font-size:0.5em;display:inline;margin-left:5px;">Twitter App Backend</p>
+                </span>
+                
+
+            </div>
+            
+            <div style="margin-top: 10px;">
+                <span>
+                    <i  class="fa-solid fa-plus" style="color:azure; scale:0.5;font-weight:bold;"></i>
+                    <p style="font-size:0.5em;display:inline;margin-left:5px;margin-top:10px;color:rgb(96, 94, 94)">Add another card</p>
+    
+                </span>
+            </div>
+        </div>
+        <!-- Fifth Block -->
+        <div class="list1" style="height: fit-content;">
+            <span>
+                <p style="display:inline;font-size:0.5em;">Done </p>
+                <p style="display:inline;font-size:0.5em;margin-left:62px;">...</p>
+            </span>
+            <div style="margin-top: 10px;">
+                <span>
+                    <i  class="fa-solid fa-plus" style="color:azure; scale:0.5;font-weight:bold;"></i>
+                    <p style="font-size:0.5em;display:inline;margin-left:5px;margin-top:10px;color:rgb(96, 94, 94)">Add another card</p>
+    
+                </span>
+            </div>
+            
+            
+            
+            
+        </div>
+        <!-- Sixth Block -->
+        <div class="list1" style="height: fit-content;">
+            <div style="margin-top: 10px;">
+                <span>
+                    <i  class="fa-solid fa-plus" style="color:azure; scale:0.5;font-weight:bold;"></i>
+                    <p style="font-size:0.5em;display:inline;margin-left:5px;margin-top:10px;color:rgb(96, 94, 94)">Add another list</p>
+    
+                </span>
+            </div>
+        </div>
+        <!-- Seventh Block -->
+        <div class="list1">
+            <span>
+                <p style="display:inline;font-size:0.5em;">Doing </p>
+                <p style="display:inline;font-size:0.5em;margin-left:62px;">...</p>
+            </span>
+            
+           
+            <div class="blocks">
+                <span>
+                    <textarea name="area" id="desc" placeholder="Enter list title ..."></textarea>
+                </span>
+                
+
+            </div>
+            <div class="blocks">
+                <span>
+                    <input style="font-size: 9px;
+                    color: azure;
+                    background-color: #9FA04A;
+                    border: 1px solid brown;
+                    margin-top: 24px;" type="button" value="Add List">
+                    <span style="    font-size: 13px;
+                    font-family: cursive;
+                    font-weight: bold;">X</span>
+                </span>
+                
+
+            </div>
+        
+        </div>
+</body>
+</html>
